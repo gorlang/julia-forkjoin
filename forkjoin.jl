@@ -19,7 +19,6 @@ function Compute(indata::Array{String}, result::Channel, compute_size::Int, fork
         forks .+= 1
 		t = @task ComputeDirect(indata, result)
         schedule(t);
-        #ComputeDirect(indata, result)
 		return
     end
 

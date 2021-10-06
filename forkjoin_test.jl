@@ -1,4 +1,4 @@
-#import Pkg; Pkg.add("BenchmarkTools")
+import Pkg; Pkg.add("BenchmarkTools")
 using BenchmarkTools
 include("forkjoin.jl")
 using Main.Forkjoin
