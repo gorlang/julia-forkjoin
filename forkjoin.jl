@@ -15,11 +15,11 @@ export Compute
 function Compute(indata::Array{String}, result::Channel, compute_size::Int, forks::Array{Int64}) 
 
     size_indata = length(indata)
-	if size_indata <= compute_size 
+    if size_indata <= compute_size 
         forks .+= 1
-		t = @task ComputeDirect(indata, result)
+        t = @task ComputeDirect(indata, result)
         schedule(t);
-		return
+        return
     end
 
     result_fork_a = Channel(1)
