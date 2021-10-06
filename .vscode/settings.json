@@ -1,0 +1,4 @@
+{
+    "julia.environmentPath": "/Users/green/Dev/projects/julia-forkjoin",
+    "environment": [ {"name": "Julia.NumThreads", "value": 8}]
+}
