@@ -47,6 +47,6 @@ function bench(indata, threads=1)
 end
 
 indata = data(10000)
-#@benchmark bench(copy(indata), 1)
+@benchmark bench(copy(indata), 1)
 @benchmark bench(copy(indata), 8)
 
