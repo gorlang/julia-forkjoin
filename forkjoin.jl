@@ -1,8 +1,8 @@
 """
     ForkJoin pattern using channels for collection of results.
-	Splits the processing of data into subsequential smaller pieces recursively that can be processed in parallel.
-	If indata size is larger than compute_size, computing of data will be split (forked) into two parts
-	Thus there can be 1, 2, 4, 8, 16, 32 or more tasks processing the data.
+    Splits data processing into subsequential smaller pieces that can be processed in parallel.
+    If indata size is larger than compute_size, data will be split (forked) into two parts and processed separately.
+    Thus there can be 1, 2, 4, 8 etc. simultaneous tasks processing the data.
 """
 
 module Forkjoin
